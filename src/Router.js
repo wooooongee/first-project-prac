@@ -6,6 +6,7 @@ import Main from "./Main";
 import { Nav } from "./Nav";
 import "./Nav.scss"
 import { Category } from "./pages/Category";
+import Swipe from "./pages/Swiper";
 import { Vision } from "./pages/Vision";
 const Router = () => {
   return (
@@ -15,6 +16,7 @@ const Router = () => {
         <Route path="/" element={<Main />} />
         <Route path="/category" element={<Category />}/>
         <Route path="/vision" element={<Vision />}/>
+        <Route path="swiper" element={<Swipe/>}/>
       </Routes>
     </BrowserRouter>
   );
